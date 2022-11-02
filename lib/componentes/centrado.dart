@@ -13,7 +13,7 @@ class Centrado extends StatelessWidget {
         ),
         body: GestureDetector(
           onTap: () {
-            print('Hola Probando Gestos');
+            print('Hola Probando Gestos Desde el Contenedor');
           },
           child: Center(
             child: Container(
@@ -21,9 +21,14 @@ class Centrado extends StatelessWidget {
               height: 300,
               color: Colors.red,
               child: Center(
-                  child: const Text(
-                'Soy un Texto',
-                style: TextStyle(color: Colors.white),
+                  child: GestureDetector(
+                onTap: () {
+                  print('Gesto desde el Texto');
+                },
+                child: const Text(
+                  'Soy un Texto',
+                  style: TextStyle(color: Colors.white),
+                ),
               )),
             ),
           ),

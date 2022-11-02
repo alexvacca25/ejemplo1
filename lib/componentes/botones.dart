@@ -12,16 +12,21 @@ class Botones extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Botones'),
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app_rounded))
+          ],
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, //Probar las opciones
             children: [
               //Boton1
+              IconButton(
+                  onPressed: () {}, icon: Icon(Icons.account_circle_outlined)),
               SizedBox(height: 10),
               TextButton(
                 onPressed: () {},
-                child: Text('Boton 1'),
+                child: Text('Validar Datos'),
               ),
               //Boton 2
               SizedBox(height: 10),
@@ -45,7 +50,7 @@ class Botones extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   'Boton 4',
-                  style: TextStyle(fontSize: 20, color: Colors.black),
+                  style: TextStyle(fontSize: 30, color: Colors.black),
                 ),
               ),
 

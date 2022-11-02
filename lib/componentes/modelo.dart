@@ -24,6 +24,40 @@ class PeliPantalla extends StatelessWidget {
                 },*/
                 ListView(
               children: [
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Colors.red,
+                    child: Text(nuevaPeli.raiting),
+                  ),
+                  title: Text(nuevaPeli.titulo),
+                  subtitle: Text(nuevaPeli.anno.toString()),
+                  trailing: Column(
+                    children: [
+                      Text('7.32 pm'),
+                      CircleAvatar(
+                        child: Text('10'),
+                        radius: 10,
+                      )
+                    ],
+                  ),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Colors.red,
+                    child: Text(nuevaPeli.raiting),
+                  ),
+                  title: Text(nuevaPeli.titulo),
+                  subtitle: Text(nuevaPeli.anno.toString()),
+                  trailing: Column(
+                    children: [
+                      Text('7.32 pm'),
+                      CircleAvatar(
+                        child: Text('10'),
+                        radius: 10,
+                      )
+                    ],
+                  ),
+                ),
                 Text(nuevaPeli.titulo),
                 Text(nuevaPeli.raiting),
                 Text(nuevaPeli.plot),

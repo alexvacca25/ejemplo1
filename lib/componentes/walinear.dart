@@ -16,7 +16,7 @@ class Walinear extends StatelessWidget {
           height: 200,
           color: Colors.blue,
           child: Align(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.bottomRight,
             child: Container(
               width: 50,
               height: 50,

@@ -19,8 +19,8 @@ class Textos extends StatelessWidget {
                   'Titulo',
                   style: TextStyle(
                     color: Colors.red,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w800,
                     fontStyle: FontStyle.italic,
                     decoration: TextDecoration.underline,
                     decorationColor: Colors.amberAccent[600],

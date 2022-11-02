@@ -12,12 +12,22 @@ class Expandir extends StatelessWidget {
           title: Text('Expandir'),
         ),
         body: Center(
-            child: Column(children: [
+            child: Row(children: [
           Expanded(
-            flex: 1,
+            flex: 3,
             child: Container(
               height: 100,
               color: Colors.yellow,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.ac_unit_outlined),
+                    Icon(Icons.ac_unit_outlined),
+                    Icon(Icons.ac_unit_outlined),
+                  ],
+                ),
+              ),
             ),
           ),
           Expanded(
@@ -28,7 +38,7 @@ class Expandir extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: 1,
             child: Container(
               height: 100,
               color: Colors.red,

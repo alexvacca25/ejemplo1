@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 // Aumentar - Disminuir - Reiniciar en un rango de -10 a 10 , Modificar Iconos
 
       persistentFooterButtons: [
-        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           ElevatedButton(onPressed: () {}, child: Icon(Icons.access_time)),
           ElevatedButton(onPressed: () {}, child: Icon(Icons.access_time)),
           ElevatedButton(onPressed: () {}, child: Icon(Icons.access_time)),
